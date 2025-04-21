@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emily Sirat">
+    <meta name="description" content="A guide to baking for beginners.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="baking.css">
+    <title>Baking Basics: About Us</title>
+</head>
+
+<body>
+    <!-- start the page here -->
+    <header>
+        <span>Baking Basics</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="tools.html">Baking Tools</a></li>
+            <li><a href="measurements.html">Measurements</a></li>
+            <li><a href="ingredients.html">Understanding Ingredients</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Understanding Ingredients</h1>
+
+        <h2>What Do They Do?</h2>
+        <p>Different ingredients support baked goods in different ways. Some are specific, like baking soda vs. baking
+            powder. While others can be used as substitutions, like sour cream and Greek yogurt. Down below, we'll be
+            going through a more in depth conversation on how ingredients play an important role in baking chemistry.
+        </p>
+
+        <h2>Ingredients and Their Roles</h2>
+        <dl>
+            <dt>Flour</dt>
+            <dd>Provides structure (gluten = strength)</dd>
+            <dt>Sugar</dt>
+            <dd>Adds sweetness and moisture; helps browning.</dd>
+            <dt>Eggs</dt>
+            <dd>Bind ingredients, add moisture and richness, help with structure.</dd>
+            <dt>Butter/Oil</dt>
+            <dd>Adds fat for tenderness and flavor.</dd>
+            <dt>Leaveners (baking soda/powder, yeast)</dt>
+            <dd>Make baked goods rise.</dd>
+            <dt>Liquid (milk, water, juice)</dt>
+            <dd>Helps mix, activates gluten and leaveners.</dd>
+            <dt>Salt</dt>
+            <dd>Enhances the flavors and balances sweetness.</dd>
+        </dl>
+
+
+
+
+
+        <h2><strong>Substitutions Aren't Always Simple!</strong></h2>
+        <ol>
+            <li>Swapping out ingredients can effect a baked goods taste, texture, and how it rises.</li>
+            <li>Experimenting with your ingredients is <strong>OKAY</strong>. But while you're first starting out, it's
+                better to follow the recipes with the ingredients listed and only substitute if the baker has it listed
+                as an option</li>
+        </ol>
+        <h2>Ingredients Shopping List</h2>
+        <p> As you purchase your ingredient essentials, check them off. When you've
+            completed the list, please click the
+            Complete Shopping List button and a comfirmation and copy of your list will be sent to you via text/email.</p>
+
+        <p><strong>Please fill out the following:</strong></p>
+        <form method="get" class="list" action="thanks.html">
+            <fieldset>
+                <legend>Baker's Info</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="555-555-5555"></label>
+                <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Method of Contact</legend>
+                <label><input type="radio" name="method" value="phone">Text</label>
+                <label><input type="radio" name="method" value="email">Email</label>
+                <label><input type="radio" name="method" value="both">Both</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Ingredient Shopping List</legend>
+                <label><input type="checkbox" name="Salt" value="chosen">Flour</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Sugar</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Eggs</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Butter</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Vegetable Oil</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Baking Soda</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Baking Powder</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Milk</label>
+                <label><input type="checkbox" name="Salt" value="chosen">Salt</label>
+            </fieldset>
+
+            <fieldset>
+                <label> Did you complete your shopping list?
+                    <select name="answer">
+                        <option value="none">Please Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="almost">almost</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label> Notes
+                <textarea name="notes"></textarea>
+            </label>
+
+
+            <input type="submit" value="Complete Shopping list">
+        </form>
+    </main>
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Emily Sirat &bull; Web Essentials</p>
+
+    </footer>
+
+</body>
+
+</html>
