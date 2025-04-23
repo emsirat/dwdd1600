@@ -1,0 +1,311 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Noticia Text", serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* header stuff here */
+header {
+    background-color: #F4D1FF;
+    padding: 1rem 10px;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+
+header span {
+    color: #0B1957;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* SMALL screens */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        text-decoration: none;
+        display: block;
+        padding: .8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #0B1957;
+    }
+    nav .active a {
+        background-color: #5784e6;
+        background-image: linear-gradient(to bottom, #5784e6, #4167bb);
+        color: white;
+    }
+    
+
+} /*end of the media query*/
+
+
+
+/* BIG screens*/
+@media only screen and (min-width: 601px) {
+
+    nav {
+        background-color: #5784e6
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0 10px;
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav a {
+        display: block;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #0B1957;
+        font-weight: 700;
+    }
+    
+    nav li.active a {
+        background-color: #0B1957;
+        color: #5784e6
+    }
+    
+    nav li a:hover {
+        color: white;
+    }
+    
+ 
+} /*end of the media query*/
+
+
+
+
+
+
+
+/* main stuff here */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #FA9EBC;
+}
+
+main h2 {
+    color: #0B1957;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #333
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #F4D1FF;
+}
+
+main dl dt {
+    color: #0B1957;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #5784e6;
+    font-size: .9rem;
+    margin-left: 20px;
+
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    color: #0B1957;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: #5784e6;
+    font-size: .9rem;
+    margin-left: 20px;
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+    color: #5784e6;
+}
+
+main a {
+    color: #FA9EBC;
+}
+
+figure.baking {
+width: 100%;
+margin: 0;
+
+}
+
+main a:hover {
+    color: #5784e6;
+}
+
+/* main image stuff */
+figure.baking {
+    margin: 0;
+    width: 100%;
+    float: none;
+}
+
+figure.baking img {
+    width: 100%;
+    height: auto;
+}
+
+figure.baking figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* Gallery stuff */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figure img:hover {
+    box-shadow: 0px 0px 10px black;
+}
+div.gallery figcaption {
+text-align: center;
+font-size: .8rem;
+color: #FA9EBC;
+}
+
+
+
+
+
+
+
+
+
+.list fieldset {
+    border: dashed 1px #FA9EBC;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+.list legend {
+    color: #FA9EBC;
+    font-size: .9rem;
+}
+.list label {
+    margin: .8rem;
+}
+.list label, .list select, .list [type=text], .list [type=tel], .list [type=email], .list textarea {
+    display: block;
+}
+
+.list [type=text], .list [type=tel], .list select, .list [type=tel], .list [type=email], .list textarea
+{
+    border: solid 2px #5784e6;
+    padding: .4rem;
+    width: 300px;
+    border-radius: .4rem ;
+    font-family: "Noticia Text", serif;
+}
+.list textarea {
+    height: 4rem;
+    
+}
+
+    .list :required {
+        background-color: #F4D1FF;
+    }
+    .list [type=submit] {
+    background-color: #FA9EBC;
+    border: none;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-size: 1rem;
+    }
+
+    table.our-levels {
+        width:100%;
+        border-collapse: collapse;
+    }
+    table.our-levels th {
+        background-color: #5784e6;
+        color: white;
+        padding: .5rem 2vw;
+        text-align: left;
+    }
+    table.our-levels td {
+        color: #0B1957;
+        padding:.4rem 2vw;
+    }
+    table.our-levels tr:nth-child(odd) {
+        background-color: #f7f7f7;
+    }
+    table.our-levels tr:hover {
+        background-color: #a6b6ff;
+    }
+
+
+
+/* footer stuff here*/
+
+footer address {
+    margin-left: 10px;
+    font-style: normal;
+    background-color: #F4D1FF;
+    padding: .5rem 30px;
+    border-radius: 10px;
+    border: 2px dashed #0B1957;
+    width: 400px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    letter-spacing: 3px;
+}
+footer a {
+    color: #080808;
+}
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
